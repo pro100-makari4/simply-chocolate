@@ -10,7 +10,7 @@ a {
     cursor: pointer;
     border: none;
     text-decoration: none;
-    /* color: inherit; */
+    color: inherit;
     padding: 0;
     margin: 0;
 }
@@ -101,16 +101,13 @@ img {
     margin: 0 auto;
     width: 335px;
     border-radius: 30px;
-}
-
-.hero-wrapper {
-    padding: 395px 20px 20px;
+    padding: 380px 20px 20px;
+    margin-bottom: 60px;
 }
 
 .hero-title {
     width: 290px;
     height: 72px;
-    flex-shrink: 0;
 
     color: #FFFFFF;
     font-size: 20px;
@@ -120,11 +117,12 @@ img {
     margin-bottom: 32px;
 }
 
-.button-list {
+.buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 14px;
+    margin-bottom: 32px;
 }
 
 .hero-button-left {
@@ -133,25 +131,187 @@ img {
     color: #FFFFFF;
     background-color: #FD9222;
     font-weight: 600;
-
     border: none;
-    background-color: #fd9222;
     color: #ffffff;
     transition: background-color 250ms linear, color 250ms linear;
 }
 
 .hero-button-right {
-    width: 159px;
+    font-weight: 600;
     padding: 12px 28px;
     border-radius: 100px;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
+    background: transparent;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.scroll-down {
+    display: flex;
+    align-items: center;
+    width: 107px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    gap: 12px;
+}
+
+.scroll-btn {
+    position: relative;
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+.scroll-btn-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #FD9222;
+    width: 10px;
+    height: 10px;
+}
+
+.hero-button-left:hover,
+.hero-button-left:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+.hero-button-right:hover,
+.hero-button-right:focus {
+    border: 1px solid #FD9222;
+    color: #FD9222;
+}
+
+.hero-button-left:active {
+    text-decoration: none;
 }
 
 
-
-
-
 /*///// HERO SECTION //////*/
+
+
+/* BENEFITS SECTION */
+
+.benefits-section {
+    background: #1E1823;
+}
+
+.benefits-wrapper {
+    padding-top: 20px;
+}
+
+.benefits-list-item {
+    margin-bottom: 38px;
+}
+
+.benefits-list-item h3 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.benefits-list-item p {
+    color: rgba(255, 255, 255, 0.70);
+    letter-spacing: -0.02em;
+    width: 308px;
+}
+
+.benefits-icon-box {
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 22px;
+}
+
+.benefits-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #FD9222;
+}
+
+
+/*//////// BENEFITS SECTION /////////*/
+
+/* INGREDIENTS SECTION */
+
+.ingredients-section {
+    padding: 60px 0;
+}
+
+.ingredients-section h2 {
+    color: #111;
+    width: 283px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin: 0 auto 24px auto;
+}
+
+.taste-span {
+    color: #FD9222;
+}
+
+.ingredients-text {
+    color: #111;
+    width: 335px;
+    text-align: center;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+}
+
+.ingredients-name {
+        font-weight: 600;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        padding-left: 28px;
+        padding-bottom: 28px;
+}
+
+.ingredients-list-item {
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+.ingredients-list-item:nth-child(4n+1) {
+    background-color: #FD9222;
+    color: #FFFFFF;
+}
+
+
+.ingredients-list-item:nth-child(even) {
+    background-color: #FFFFFF;
+    color: #111;
+}
+
+.ingredients-list-item:nth-child(4n+3) {
+    background: #1E1823;
+    border-color:#1E1823;
+    color:#FFFFFF;
+}
+
+.ingredients-list-item img {
+        padding: 28px 55px;
+}
+
+/*//////// INGREDIENTS SECTION /////////*/
 
 /*///// MAIN //////*/

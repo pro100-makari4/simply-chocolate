@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <header>
+      <div class="container header">
         <div class="logo">
           <a class="logo-title" href="#"
             ><span class="logo-title-italic">SIMPLY</span> CHOCOLATE</a
@@ -42,29 +42,144 @@
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <div class="hero-section">
-          <div class="hero-wrapper">
-            <h1 class="hero-title">
-              Treat yourself or a loved one to our finest ingredients for a
-              moment of pure delight!
-            </h1>
+    <main>
+      <div class="hero-section">
+        <div class="hero-wrapper">
+          <h1 class="hero-title">
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
+          </h1>
 
-            <ul class="button-list">
-              <li class="hero-button-left">
-                <button type="button">Buy now</button>
-              </li>
-              <li class="hero-button-right">
-                <button type="button">How it&#8242;s made</button>
-              </li>
-            </ul>
+          <div class="buttons">
+            <button class="hero-button-left" type="button">Buy now</button>
+
+            <a class="hero-button-right" href="#"> How it&#8242;s made </a>
           </div>
+          <a class="scroll-down" href="#"
+            >scroll down
+            <span class="scroll-btn"
+              ><svg class="scroll-btn-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-direction"></use></svg></span
+          ></a>
         </div>
-      </main>
+      </div>
 
-      <footer></footer>
-    </div>
+      <section class="benefits-section section">
+        <div class="benefits-wrapper container">
+          <h2 class="visually-hidden">Our Benefits</h2>
+
+          <ul class="benefits-list">
+            <li class="benefits-list-item">
+              <div class="benefits-icon-box">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
+                </svg>
+              </div>
+              <h3>Unsurpassed taste</h3>
+              <p>
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="benefits-list-item">
+              <div class="benefits-icon-box">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
+              <h3>Affordable price</h3>
+              <p>
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </li>
+            <li class="benefits-list-item">
+              <div class="benefits-icon-box">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
+              <h3>Own production</h3>
+              <p>
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="ingredients-section section">
+        <div class="ingredients-wrapper container">
+          <h2>
+            IT ALL ADDS UP TO ONE EXCEPTIONAL
+            <span class="taste-span">TASTE</span> SENSATION
+          </h2>
+          <p class="ingredients-text">
+            At Simply Chocolate, we believe that the secret to exceptional
+            chocolate is in the details. From the sourcing of the finest
+            ingredients to the careful crafting of each individual piece, every
+            step of our process adds up to one exceptional taste sensation.
+          </p>
+          <ul class="ingredients-list">
+            <li class="ingredients-list-item">
+              <img
+                srcset="
+                  ./images/chocolate.png    224w,
+                  ./images/chocolate@2x.png 448w
+                "
+                sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 224px"
+                src="./images/chocolate.png"
+                alt="mILK CHOCOLATE"
+              />
+              <p class="ingredients-name">mILK CHOCOLATE</p>
+            </li>
+            <li class="ingredients-list-item">
+              <img
+                srcset="./images/milk.png 224w, ./images/milk@2x.png 448w"
+                sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 224px"
+                src="./images/milk.png"
+                alt="Milk"
+              />
+              <p class="ingredients-name">Milk</p>
+            </li>
+            <li class="ingredients-list-item">
+              <img
+                srcset="./images/nuts.png 224w, ./images/nuts@2x.png 448w"
+                sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 224px"
+                src="./images/nuts.png"
+                alt="nuts"
+              />
+              <p class="ingredients-name">nuts</p>
+            </li>
+            <li class="ingredients-list-item">
+              <img 
+                srcset="
+                  ./images/sm-chocolate.png    224w,
+                  ./images/sm-chocolate@2x.png 448w
+                "
+                sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 224px"
+                src="./images/sm-chocolate.png"
+                alt="sEMI - SWEET CHOCOLATE"
+              />
+              <p class="ingredients-name">sEMI - SWEET CHOCOLATE</p>
+            </li>
+            
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>

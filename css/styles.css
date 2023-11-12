@@ -1,0 +1,157 @@
+body {
+    background-color: #FAFAFA;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+button,
+a {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    /* color: inherit; */
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* COMMON */
+
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 14px 0;
+    gap: 4px;
+}
+
+.logo-title {
+    color: #111;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+}
+
+.logo-title-italic {
+    font-style: italic;
+}
+
+.burger-open-btn {
+    align-self: center;
+    line-height: 0;
+}
+
+.burger-open-btn-icon {
+    stroke: black;
+}
+
+/* ///HEADER */
+
+
+/* MAIN */
+
+/* HERO SECTION */
+
+.hero-section {
+    background-color: #2e2f42;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+        url(../images/mobil/chocolate-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 335px;
+    border-radius: 30px;
+}
+
+.hero-wrapper {
+    padding: 395px 20px 20px;
+}
+
+.hero-title {
+    width: 290px;
+    height: 72px;
+    flex-shrink: 0;
+
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 14px;
+}
+
+.hero-button-left {
+    padding: 12px 28px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    background-color: #FD9222;
+    font-weight: 600;
+
+    border: none;
+    background-color: #fd9222;
+    color: #ffffff;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.hero-button-right {
+    width: 159px;
+    padding: 12px 28px;
+    border-radius: 100px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/*///// HERO SECTION //////*/
+
+/*///// MAIN //////*/

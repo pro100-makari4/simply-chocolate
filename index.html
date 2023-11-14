@@ -37,10 +37,47 @@
           </svg>
         </div>
 
-        <div class="burger-open-btn">
+        <button class="burger-open-btn" type="button">
           <svg class="burger-open-btn-icon" width="28" height="28">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
+        </button>
+
+        <div class="overlay-transperent">
+          <div class="burger-overlay">
+            <button class="burger-close-btn">
+              <svg class="burger-close-btn-icon" width="28" height="28">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="burger-menu-window">
+              <ul class="burger-nav-list">
+                <li class="burger-nav-item"><a href="#">Home</a></li>
+                <li class="burger-nav-item">
+                  <a href="#how-made">How it&#8242;s made?</a>
+                </li>
+                <li class="burger-nav-item">
+                  <a href="#chocolate-is-loved">Chocolate is loved</a>
+                </li>
+              </ul>
+              <ul class="burger-social-list">
+                <li class="burger-social-item">
+                  <a href="#">
+                    <svg class="burger-social-icon" width="22" height="22">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="burger-social-item">
+                  <a href="#">
+                    <svg class="burger-social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -254,7 +291,7 @@
 
       <section class="reviews-section">
         <div class="reviews-wrapper container">
-          <h2 class="reviews-title">
+          <h2 class="reviews-title" id="chocolate-is-loved">
             <span class="accent-color">chocolate</span> is loved
           </h2>
           <div class="reviews-content">

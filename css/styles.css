@@ -37,7 +37,7 @@ ol {
 
 img {
     display: block;
-    /* width: 100%; */
+    max-width: 100%;
     height: auto;
 }
 
@@ -49,6 +49,25 @@ img {
 
 .accent-color {
     color: #FD9222;
+}
+
+.overlay-transperent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 38, 38, 0.6);
+    z-index: 99;
+
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+
+.overlay-transperent.is-open {
+    overflow: visible;
+    opacity: 1;
 }
 
 /* COMMON */
@@ -79,6 +98,8 @@ img {
     font-style: italic;
 }
 
+/* BURGER */
+
 .burger-open-btn {
     align-self: center;
     line-height: 0;
@@ -87,6 +108,91 @@ img {
 .burger-open-btn-icon {
     stroke: black;
 }
+
+.burger-close-btn {
+    position: absolute;
+    background: transparent;
+    fill: #FFFFFF;
+    top: 20px;
+    right: 20px;
+
+    transition: fill 250ms linear;
+}
+
+.burger-close-btn:focus,
+.burger-close-btn:hover {
+    fill: #FD9222;
+}
+
+.burger-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #1E1823;
+    min-width: 220px;
+    max-width: 375px;
+    height: 100%;
+    z-index: 100;
+
+    transform: translateX(100%);
+    transition: transform 250mx linear;
+}
+
+.overlay-transperent.is-open .burger-overlay {
+    transform: translateX(0);
+}
+
+.burger-menu-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 136px 20px 20px;
+}
+
+.burger-nav-list{
+    padding-left: 28px;
+}
+
+.burger-nav-item {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+
+    transition: color 250ms linear;
+}
+
+.burger-nav-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.burger-nav-item:focus,
+.burger-nav-item:hover {
+    color: var(--orange, #FD9222);
+}
+
+.burger-social-list{
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.burger-social-icon {
+    stroke: #FFFFFF;
+    stroke-width: 2.18;
+
+    transition: stroke 250ms linear;
+}
+
+.burger-social-icon:hover,
+.burger-social-icon:focus {
+    stroke: #FD9222;
+}
+
+
+/* ///////BURGER////// */
 
 /* ///HEADER */
 
@@ -411,6 +517,8 @@ img {
     position: absolute;
     top: 0;
     left: 50%;
+    width: 80px;
+
     transform: translate(-50%, -50%);
 }
 

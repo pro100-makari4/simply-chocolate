@@ -104,6 +104,8 @@ img {
 .burger-open-btn {
     align-self: center;
     line-height: 0;
+    background-color: transparent;
+    padding: 14px;
 }
 
 .burger-open-btn-icon {

@@ -109,16 +109,55 @@ img {
 .hero-section {
     background-color: #2e2f42;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
-        url(../images/mobil/chocolate-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        url(../images/hb-mobil.jpg);
     margin: 0 auto;
-    width: 335px;
     border-radius: 30px;
     padding: 380px 20px 20px;
     margin-bottom: 60px;
 }
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi),
+screen and (max-width: 768px) and (min-resolution: 2dppx),
+screen and (max-width: 768px) and (min-device-pixel-ratio: 2) {
+    .hero-section {
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url(../images/hb-mobil@2x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 335px;
+        height: 620px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx),
+screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+    .hero-section {
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url(../images/hb-tablet@2x.jpg);
+        width: 704px;
+        height: 890px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx),
+screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
+    .hero-section {
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url(../images/hb-desktop@2x.jpg);
+        width: 1136px;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
 
 .hero-title {
     width: 290px;
@@ -220,6 +259,7 @@ img {
 
 .benefits-wrapper {
     padding-top: 20px;
+    margin: 0 auto;
 }
 
 .benefits-list-item {
@@ -836,110 +876,110 @@ img {
 
 @media screen and (max-width: 767px) {
     /* BURGER */
-    
-        .burger-open-btn {
-            align-self: center;
-            line-height: 0;
-            background-color: transparent;
-            padding: 14px 0 14px 14px;
-        }
-    
-        .burger-open-btn-icon {
-            stroke: black;
-        }
-    
-        .burger-close-btn {
-            position: absolute;
-            background: transparent;
-            fill: #FFFFFF;
-            top: 20px;
-            right: 20px;
-    
-            transition: fill 250ms linear;
-        }
-    
-        .burger-close-btn:focus,
-        .burger-close-btn:hover {
-            fill: #FD9222;
-        }
-    
-        .burger-overlay {
-            position: fixed;
-            top: 0;
-            right: 0;
-            background: #1E1823;
-            min-width: 220px;
-            max-width: 375px;
-            height: 100%;
-            z-index: 100;
-    
-            transform: translateX(100%);
-            transition: transform 250mx linear;
-        }
-    
-        .review-overlay.is-open .burger-overlay {
-            transform: translateX(0);
-        }
-    
-        .burger-menu-window {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            padding: 136px 20px 20px;
-        }
-    
-        .burger-nav-list {
-            padding-left: 28px;
-        }
-    
-        .burger-nav-item {
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.14;
-            letter-spacing: -0.02em;
-    
-            transition: color 250ms linear;
-        }
-    
-        .burger-nav-item:not(:last-child) {
-            margin-bottom: 24px;
-        }
-    
-        .burger-nav-item:focus,
-        .burger-nav-item:hover {
-            color: var(--orange, #FD9222);
-        }
-    
-        .burger-social-list {
-            flex-direction: row;
-            align-items: center;
-            gap: 18px;
-        }
-    
-        .burger-social-icon {
-            stroke: #FFFFFF;
-            stroke-width: 2.18;
-    
-            transition: stroke 250ms linear;
-        }
-    
-        .burger-social-icon:hover,
-        .burger-social-icon:focus {
-            stroke: #FD9222;
-        }
-    
-    
-        /* ///////BURGER////// */
+
+    .burger-open-btn {
+        align-self: center;
+        line-height: 0;
+        background-color: transparent;
+        padding: 14px 0 14px 14px;
+    }
+
+    .burger-open-btn-icon {
+        stroke: black;
+    }
+
+    .burger-close-btn {
+        position: absolute;
+        background: transparent;
+        fill: #FFFFFF;
+        top: 20px;
+        right: 20px;
+
+        transition: fill 250ms linear;
+    }
+
+    .burger-close-btn:focus,
+    .burger-close-btn:hover {
+        fill: #FD9222;
+    }
+
+    .burger-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #1E1823;
+        min-width: 220px;
+        max-width: 375px;
+        height: 100%;
+        z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform 250mx linear;
+    }
+
+    .review-overlay.is-open .burger-overlay {
+        transform: translateX(0);
+    }
+
+    .burger-menu-window {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 136px 20px 20px;
+    }
+
+    .burger-nav-list {
+        padding-left: 28px;
+    }
+
+    .burger-nav-item {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+
+        transition: color 250ms linear;
+    }
+
+    .burger-nav-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .burger-nav-item:focus,
+    .burger-nav-item:hover {
+        color: var(--orange, #FD9222);
+    }
+
+    .burger-social-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .burger-social-icon {
+        stroke: #FFFFFF;
+        stroke-width: 2.18;
+
+        transition: stroke 250ms linear;
+    }
+
+    .burger-social-icon:hover,
+    .burger-social-icon:focus {
+        stroke: #FD9222;
+    }
 
 
-      
+    /* ///////BURGER////// */
+
+
+
 }
 
 
 @media screen and (min-width: 768px) {
     .footer-mobil-nav {
-            display: none;
-        }
+        display: none;
+    }
 }

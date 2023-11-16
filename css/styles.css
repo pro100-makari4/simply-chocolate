@@ -42,9 +42,9 @@ img {
 }
 
 .container {
+    margin: 0 auto;
     width: 375px;
     padding: 0 20px;
-    margin: 0 auto;
 }
 
 .accent-color {
@@ -112,56 +112,15 @@ img {
         url(../images/hb-mobil.jpg);
     margin: 0 auto;
     border-radius: 30px;
-    padding: 380px 20px 20px;
     margin-bottom: 60px;
 }
 
-@media screen and (max-width: 767px) and (min-resolution: 192dpi),
-screen and (max-width: 768px) and (min-resolution: 2dppx),
-screen and (max-width: 768px) and (min-device-pixel-ratio: 2) {
-    .hero-section {
-        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
-            url(../images/hb-mobil@2x.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 335px;
-        height: 620px;
-    }
+.hero-wrapper {
+    padding: 395px 20px 20px;
 }
-
-@media screen and (min-width: 768px) and (min-resolution: 192dpi),
-screen and (min-width: 768px) and (min-resolution: 2dppx),
-screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
-    .hero-section {
-        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
-            url(../images/hb-tablet@2x.jpg);
-        width: 704px;
-        height: 890px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
-@media screen and (min-width: 1200px) and (min-resolution: 192dpi),
-screen and (min-width: 1200px) and (min-resolution: 2dppx),
-screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
-    .hero-section {
-        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
-            url(../images/hb-desktop@2x.jpg);
-        width: 1136px;
-        height: 600px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
 
 .hero-title {
     width: 290px;
-    height: 72px;
 
     color: #FFFFFF;
     font-size: 20px;
@@ -171,12 +130,17 @@ screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
     margin-bottom: 32px;
 }
 
-.buttons {
+.hero-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}
+
+.hero-buttons-left-right {
+    display: flex;
+    align-items: center;
     gap: 14px;
-    margin-bottom: 32px;
 }
 
 .hero-button-left {
@@ -202,8 +166,8 @@ screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
 
 .scroll-down {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    width: 107px;
     color: #FFF;
     font-size: 12px;
     font-weight: 500;
@@ -264,6 +228,7 @@ screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
 
 .benefits-list-item {
     margin-bottom: 38px;
+    width: 308px;
 }
 
 .benefits-list-item h3 {
@@ -276,7 +241,6 @@ screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
 .benefits-list-item p {
     color: rgba(255, 255, 255, 0.70);
     letter-spacing: -0.02em;
-    width: 308px;
 }
 
 .benefits-icon-box {
@@ -875,6 +839,20 @@ screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
 /* //////REVIEW MODAL WINDOW//// */
 
 @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 768px) and (min-resolution: 2dppx),
+    screen and (max-width: 768px) and (min-device-pixel-ratio: 2) {
+        .hero-section {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+                url(../images/hb-mobil@2x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 335px;
+            height: 620px;
+        }
+    }
+
     /* BURGER */
 
     .burger-open-btn {
@@ -972,14 +950,106 @@ screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
 
 
     /* ///////BURGER////// */
-
-
-
 }
 
 
 @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx),
+    screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+        .hero-section {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+                url(../images/hb-tablet@2x.jpg);
+            width: 704px;
+            height: 890px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .hero-wrapper {
+        padding: 671px 40px 40px;
+    }
+
+    .container {
+        width: 768px;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+
+
+    .hero-title {
+        font-size: 28px;
+        line-height: 1.21;
+        width: 484px;
+        margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+
+        justify-content: space-between;
+        gap: 14px;
+    }
+
+    .scroll-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .scroll-btn-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .benefits-wrapper {
+        padding: 50px 32px;
+
+    }
+
+    .benefits-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 32px;
+    }
+
+
+    .benefits-list-item {
+        width: calc((100% - 60px) / 2);
+        max-width: 308px;
+        margin-bottom: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     .footer-mobil-nav {
         display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx),
+screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
+    .hero-section {
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url(../images/hb-desktop@2x.jpg);
+        width: 1136px;
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }

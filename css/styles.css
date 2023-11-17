@@ -99,6 +99,25 @@ img {
     font-style: italic;
 }
 
+.social-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-icon {
+    stroke: #FFF;
+    stroke-width: 2.18;
+    fill: none;
+
+    transition: stroke 250ms linear;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    stroke: #FD9222;
+}
+
 /* ///HEADER */
 
 
@@ -307,10 +326,6 @@ img {
     border-radius: 15px;
 }
 
-.ingredients-list-item:not(:last-child) {
-    margin-bottom: 20px;
-}
-
 
 .ingredients-list-item:nth-child(4n+1) {
     background-color: #FD9222;
@@ -424,6 +439,7 @@ img {
 .how-made-img {
     border-radius: 15px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>), lightgray -158.445px -335.767px / 187.796% 186.969% no-repeat;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
@@ -484,7 +500,13 @@ img {
     margin-bottom: 74px;
 }
 
-.reviews-content {
+.review-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.review-list-item {
     position: relative;
     padding: 56px 18px 42px;
     margin-bottom: 20px;
@@ -555,6 +577,7 @@ img {
 
 .footer-title {
     color: #FFF;
+    width: 300px;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.17;
@@ -604,9 +627,6 @@ img {
     letter-spacing: -0.02em;
 }
 
-.footer-nav-item:not(:last-child) {
-    margin-bottom: 18px;
-}
 
 .footer-subscribe-form {
     display: flex;
@@ -853,6 +873,10 @@ img {
         }
     }
 
+    .header-nav {
+        display: none;
+    }
+
     /* BURGER */
 
     .burger-open-btn {
@@ -892,10 +916,10 @@ img {
         z-index: 100;
 
         transform: translateX(100%);
-        transition: transform 250mx linear;
+        transition: transform 250ms linear;
     }
 
-    .review-overlay.is-open .burger-overlay {
+    .overlay-transperent.is-open .burger-overlay {
         transform: translateX(0);
     }
 
@@ -930,22 +954,12 @@ img {
         color: var(--orange, #FD9222);
     }
 
-    .burger-social-list {
-        flex-direction: row;
-        align-items: center;
-        gap: 18px;
+    .ingredients-list-item:not(:last-child) {
+        margin-bottom: 20px;
     }
 
-    .burger-social-icon {
-        stroke: #FFFFFF;
-        stroke-width: 2.18;
-
-        transition: stroke 250ms linear;
-    }
-
-    .burger-social-icon:hover,
-    .burger-social-icon:focus {
-        stroke: #FD9222;
+    .footer-nav-item:not(:last-child) {
+        margin-bottom: 18px;
     }
 
 
@@ -966,6 +980,45 @@ img {
             background-position: center;
             background-repeat: no-repeat;
         }
+    }
+
+    .social-list {
+        display: flex;
+    }
+
+    .social-icon {
+        stroke: #111111;
+        line-height: 0;
+    }
+
+    .header-nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    .header-nav-item {
+        transition: color 250ms linear;;
+    }
+
+    .header-nav-item:hover,
+    .header-nav-item:focus {
+        color: #FD9222;
+    }
+
+    .header-nav {
+        align-self: center;
+    }
+    .header-nav-wrapper {
+        display: flex;
+        gap: 48px;
+    }
+
+
+    .burger-open-btn {
+        display: none;
     }
 
     .hero-wrapper {
@@ -1017,21 +1070,142 @@ img {
 
 
     .benefits-list-item {
-        width: calc((100% - 60px) / 2);
+        width: calc((100% - 32px) / 2);
         max-width: 308px;
         margin-bottom: 0;
     }
 
+    .ingredients-section {
+        padding: 80px 0;
+    }
+
+    .ingredients-section h2 {
+        margin-bottom: 28px;
+        width: 411px;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.03em;
+    }
+
+    .ingredients-text {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 486px;
+    }
+
+    .ingredients-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 32px;
+    }
 
 
 
+    .ingredients-list-item {
+        width: calc((100% - 60px) / 2);
+        max-width: 336px;
+    }
+
+    .ingredients-list-item:nth-child(4n+2) {
+        background-color: #FFFFFF;
+        color: #111;
+    }
+
+    .ingredients-list-item:nth-child(4n+3) {
+        background-color: #FFFFFF;
+        color: #111;
+        border-color: #FD9222;
+    }
+
+    .ingredients-list-item:nth-child(4n+4) {
+        background: #1E1823;
+        border-color: #1E1823;
+        color: #FFFFFF;
+    }
+
+    .how-made-content-wrapper {
+        width: 614px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        padding: 32px;
+    }
+
+    .how-made-third-title {
+        width: 350px;
+    }
+
+    .how-made-list-item {
+        width: 480px;
+    }
 
 
+    .reviews-section {
+        margin-bottom: 60px;
+    }
+
+    .reviews-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 91px;
+    }
+
+    .review-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 30px;
+        margin-bottom: 32px;
+    }
+
+    .review-list-item {
+        width: calc((100% - 16px) / 2);
+    }
 
 
+    .footer-title,
+    .contacts {
+        margin-bottom: 0;
+    }
+
+    .footer-upperline-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
 
 
+    .footer-line {
+        width: 704px;
+        margin-bottom: 24px;
+    }
 
+    .footer-underline-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .footer-subscribe-form {
+        flex-direction: row;
+    }
+
+
+    .footer-wrapper {
+        padding: 50px 32px;
+    }
 
     .footer-mobil-nav {
         display: none;

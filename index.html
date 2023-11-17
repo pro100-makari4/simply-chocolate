@@ -37,6 +37,39 @@
           </svg>
         </div>
 
+        <nav class="header-nav">
+          <div class="header-nav-wrapper">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#">Home</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#how-made">How it&#8242;s made?</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#">Chocolate is loved</a>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+                <li class="social-item">
+                  <a href="#">
+                    <svg class="social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <svg class="social-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+
         <button class="burger-open-btn" type="button">
           <svg class="burger-open-btn-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
@@ -60,17 +93,17 @@
                   <a href="#chocolate-is-loved">Chocolate is loved</a>
                 </li>
               </ul>
-              <ul class="burger-social-list">
-                <li class="burger-social-item">
+              <ul class="social-list">
+                <li class="social-item">
                   <a href="#">
-                    <svg class="burger-social-icon" width="22" height="22">
+                    <svg class="social-icon" width="22" height="22">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="burger-social-item">
+                <li class="social-item">
                   <a href="#">
-                    <svg class="burger-social-icon" width="20" height="20">
+                    <svg class="social-icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
@@ -401,19 +434,63 @@
           <h2 class="reviews-title" id="chocolate-is-loved">
             <span class="accent-color">chocolate</span> is loved
           </h2>
+
           <div class="reviews-content">
-            <img
-              class="review-autor-photo"
-              srcset="./images/Ellipse.png 80w, ./images/Ellipse@2x.png 160w"
-              sizes="(min-width: 768px) 160px, (max-width: 767px) 80px"
-              src="./images/Ellipse.png"
-              alt="Victoria Dobrzhanska review"
-            />
-            <h3 class="review-autor">Victoria Dobrzhanska</h3>
-            <p class="review-text">
-              I love this chocolate bar. Perfect combination of light crispy
-              wafer, covered in a thin layer chocolate.
-            </p>
+            <ul class="review-list">
+              <li class="review-list-item">
+                <img
+                  class="review-autor-photo"
+                  srcset="
+                    ./images/ellipse.png     80w,
+                    ./images/ellipse@2x.png 160w
+                  "
+                  sizes="(min-width: 768px) 160px, (max-width: 767px) 80px"
+                  src="./images/ellipse.png"
+                  alt="Victoria Dobrzhanska review"
+                />
+                <h3 class="review-autor">Victoria Dobrzhanska</h3>
+                <p class="review-text">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </li>
+              <li class="review-list-item">
+                <img
+                  class="review-autor-photo"
+                  srcset="
+                    ./images/ellipse-1.png     80w,
+                    ./images/ellipse-1@2x.png 160w
+                  "
+                  sizes="(min-width: 768px) 160px, (max-width: 767px) 80px"
+                  src="./images/ellipse-1.png"
+                  alt="Victoria Dobrzhanska review"
+                />
+                <h3 class="review-autor">Nazar Babenko</h3>
+                <p class="review-text">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </li>
+              <li class="review-list-item">
+                <img
+                  class="review-autor-photo"
+                  srcset="
+                    ./images/ellipse-2.png     80w,
+                    ./images/ellipse-2@2x.png 160w
+                  "
+                  sizes="(min-width: 768px) 160px, (max-width: 767px) 80px"
+                  src="./images/ellipse-2.png"
+                  alt="Victoria Dobrzhanska review"
+                />
+                <h3 class="review-autor">Olena Kampusch</h3>
+                <p class="review-text">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </li>
+            </ul>
           </div>
 
           <a class="live-review-btn" href="#">Leave a review</a>
@@ -424,54 +501,58 @@
     <footer>
       <section class="footer">
         <div class="footer-wrapper container">
-          <h2 class="footer-title">
-            <span class="accent-color">Chocolate</span> a delicious cure for a
-            bad day
-          </h2>
+          <div class="footer-upperline-content">
+            <h2 class="footer-title">
+              <span class="accent-color">Chocolate</span> a delicious cure for a
+              bad day
+            </h2>
 
-          <address class="contacts">
-            <p class="contacts-us">Contact us</p>
-            <ul>
-              <li class="contacts-list-item">
-                <a href="tel:+380684439426">+380 (68) 443-94-26</a>
-              </li>
-              <li class="contacts-list-item">
-                <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-              </li>
-            </ul>
-          </address>
+            <address class="contacts">
+              <p class="contacts-us">Contact us</p>
+              <ul>
+                <li class="contacts-list-item">
+                  <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+                </li>
+                <li class="contacts-list-item">
+                  <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                </li>
+              </ul>
+            </address>
+          </div>
           <div class="footer-line"></div>
 
-          <nav class="footer-nav">
-            <ul>
-              <li class="footer-nav-item"><a href="#">Home</a></li>
-              <li class="footer-nav-item">
-                <a href="#how-made">How it&#8242;s made?</a>
-              </li>
-              <li class="footer-nav-item footer-mobil-nav">
-                <a href="#">Our products</a>
-              </li>
-              <li class="footer-nav-item footer-mobil-nav">
-                <a href="#">Top sellers</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="#">Chocolate is loved</a>
-              </li>
-            </ul>
-          </nav>
+          <div>
+            <nav class="footer-underline-content">
+              <ul class="footer-nav">
+                <li class="footer-nav-item"><a href="#">Home</a></li>
+                <li class="footer-nav-item">
+                  <a href="#how-made">How it&#8242;s made?</a>
+                </li>
+                <li class="footer-nav-item footer-mobil-nav">
+                  <a href="#">Our products</a>
+                </li>
+                <li class="footer-nav-item footer-mobil-nav">
+                  <a href="#">Top sellers</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#">Chocolate is loved</a>
+                </li>
+              </ul>
 
-          <form class="footer-subscribe-form">
-            <label class="footer-email-label">
-              <input
-                class="footer-input-email"
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-              />
-            </label>
+              <form class="footer-subscribe-form">
+                <label class="footer-email-label">
+                  <input
+                    class="footer-input-email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
+                </label>
 
-            <button class="subscribe-btn" type="submit">Subscribe</button>
-          </form>
+                <button class="subscribe-btn" type="submit">Subscribe</button>
+              </form>
+            </nav>
+          </div>
         </div>
       </section>
     </footer>
